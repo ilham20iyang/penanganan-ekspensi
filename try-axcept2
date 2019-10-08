@@ -1,0 +1,25 @@
+def main():
+	#membuat judul program
+	print("PROGRAM PEMBAGIAN BILANGAN")
+
+	#meminta user memasukkan bilangan
+	a = float (input("Masukkan a: "))
+	b = float (input("Masukkan b: "))
+
+	#mendefiniskan blok try...except
+	try:
+		hasil = a / b
+	except ZeroDevinisionEror:
+		print("\nERROR: Nilai b tidak boleh nol")
+		sys.exit(1) #menghentikan proram
+		#menampilkan hasil
+
+		print("\na : ",a)
+		print("b : ", b)
+
+		#kode dibawah ini akan menimbulkan kesalahan
+		#dengan tipe NameError
+		
+	if __name__ == " __main__":
+		main()
+	
